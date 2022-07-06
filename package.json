@@ -1,5 +1,27 @@
 {
   "dependencies": {
-    "nba-api-client": "^1.1.1"
-  }
+    "express": "^4.18.1",
+    "papaparse": "^5.3.2"
+  },
+  "name": "nba_comparisons",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nescoba/nba_comparisons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nescoba/nba_comparisons/issues"
+  },
+  "homepage": "https://github.com/nescoba/nba_comparisons#readme",
+  "description": ""
 }
