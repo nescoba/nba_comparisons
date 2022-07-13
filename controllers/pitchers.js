@@ -7,7 +7,7 @@ const pitches = require('../data/atbats')
 const getPitcher = (req, res) => {
     console.log(req.params)
     const pitchesByPitcher = pitches.filter((pitch) => pitch.pitcher_id === Number(req.params.id))
-    return res.status(200).json({ success: true, data: pitchesByPitcher })
+    return res.status(200).json({ success: true, pitches: pitchesByPitcher.length })
 }
 
 // const createPerson = (req, res) => {

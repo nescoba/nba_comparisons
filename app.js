@@ -15,6 +15,8 @@ app.use(express.json())
 app.use('/api/pitchers', pitchers)
 app.use('/api/batters', batters)
 
-app.listen(5000, () => {
-  console.log('Server is listening on port 5000....')
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}....`)
 })
